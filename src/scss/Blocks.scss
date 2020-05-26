@@ -1,0 +1,173 @@
+.Container {
+  width: 950px;
+  margin: 0 auto;
+  box-shadow: 0px -30px 45px 0px #000000;
+}
+
+.Humburger {
+  width: 46px;
+  height: 46px;
+  background: transparent;
+  border: none;
+  padding: 0;
+
+  &__div {
+    &:first-child {
+      background: black;
+      width: 35px;
+      height: 3px;
+      margin-bottom: 5px;
+    }
+
+    &:nth-child(2) {
+      background: black;
+      width: 25px;
+      height: 3px;
+      margin-bottom: 5px;
+    }
+
+    &:last-child {
+      background: black;
+      width: 15px;
+      height: 3px;
+    }
+  }
+}
+
+.Button-social {
+  background: transparent;
+  border: none;
+  width: 24px;
+  height: 28px;
+  padding: 0;
+  transition: transform 0.5s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+.Arrow {
+  cursor: pointer;
+  width: 30px;
+  border: 15px solid transparent;
+  border-top: 20px solid #a41320;
+}
+
+.Title {
+  font-family: ArnoPro;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.Button {
+  width: 196px;
+  height: 53px;
+  background-color: #a41320;
+  border: none;
+  font-family: Arsenal;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1.6px;
+  color: #fff;
+  text-transform: capitalize;
+  transition: background-color 0.5s;
+
+  &:hover {
+    background-color: #6d0b14;
+    color: #fff;
+  }
+
+  &:active {
+    background-color: #a41320;
+    color: #fff;
+
+  }
+}
+
+/*!!!!!!!!!! Works-Books !!!!!!!!!!*/
+
+.Works-Books {
+  background: white;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 45px;
+
+  &__title {
+    color: black;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  &__wpr {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  &__item {
+    width: 254px;
+  }
+
+  &__link {
+    display: block;
+    transition: all 0.5s;
+
+    &-name {
+      display: block;
+      font-family: Arsenal;
+      font-size: 20px;
+      font-weight: 400;
+      letter-spacing: 0.2px;
+      color: #414141;
+      text-align: center;
+      margin-bottom: 17px;
+      text-transform: uppercase;
+      text-decoration: underline;
+      transition: all 0.5s;
+      text-decoration: none;
+
+      &::after {
+        content: '';
+        display: block;
+        width: 255px;
+        background: #414141;
+        height: 1px;
+      }
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: #414141;
+      transition: all 0.5s;
+    }
+
+    &:hover .Works-Books__link-name::after {
+      display: none;
+    }
+
+    &:hover .Works-Books__item-img {
+      transform: scale(1.05);
+      transition: transform 0.5s;
+    }
+
+    &:active .Works-Books__item-img {
+      transform: scale(1);
+    }
+  }
+
+  &__button {
+    margin: 35px auto 0;
+  }
+
+  &__img {
+    width: 100%;
+  }
+}

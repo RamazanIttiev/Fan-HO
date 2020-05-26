@@ -1,0 +1,73 @@
+.Promo {
+  position: relative;
+  width: 950px;
+  min-height: 608px;
+  background: url(./Img/Header-bgr.jpg) no-repeat center/cover;
+  padding: 25px 25px 15px 45px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__img {
+    width: 405px;
+    height: 187px;
+  }
+
+  &__social {
+    position: absolute;
+    left: 200px;
+    top: 40px;
+
+    &:nth-child(3) {
+      position: absolute;
+      left: 270px;
+      top: 40px;
+    }
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: end;
+    position: absolute;
+    bottom: 130px;
+    right: 25px;
+  }
+
+  &__item {
+    transition: transform 0.5s;
+
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+
+  &__link {
+    font-family: ArnoPro;
+    font-size: 30px;
+    letter-spacing: 6px;
+    color: #fff4f4;
+    padding: 5px;
+    background: transparent;
+    transition: all 0.6s;
+
+    &:hover {
+      text-decoration: none;
+      color: #fff4f4;
+      width: 82px;
+      height: 30px;
+      background: #a41320;
+      padding: 5px;
+      border-radius: 5px;
+    }
+  }
+
+  &__arr {
+    position: absolute;
+    bottom: 25px;
+    right: 50px;
+  }
+}
