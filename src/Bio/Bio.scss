@@ -1,0 +1,76 @@
+.Bio {
+  position: relative;
+  background: black;
+  padding: 45px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  &__title {
+    color: white;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  &__arr {
+    position: absolute;
+    bottom: 15px;
+    right: 50px;
+  }
+}
+
+.FanHo {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 55px;
+  margin-bottom: 100px;
+
+  &__author {
+    font-family: ArnoPro;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    text-transform: capitalize;
+  }
+
+  &__date {
+    display: block;
+    font-family: ArnoPro;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 6px;
+    color: white;
+    margin-bottom: 40px;
+  }
+
+  &__descr {
+    max-width: 362px;
+    min-height: 259px;
+    font-family: Arsenal;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 40px;
+    line-height: normal;
+    text-align: justify;
+  }
+
+  &__img {
+    width: 360px;
+    height: 489px;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+.Stage {
+  width: 100%;
+}
