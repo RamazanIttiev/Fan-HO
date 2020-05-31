@@ -1,0 +1,389 @@
+@media all and (max-width: 1200px) {
+  // BLOCKS //
+
+  .Container {
+    width: 800px;
+  }
+
+  .Works-Books {
+    &__link {
+      &:hover {
+        text-decoration: none;
+        color: #414141;
+        transition: all 0.5s;
+      }
+      &:hover .Works-Books__link-name::after {
+        display: block;
+      }
+      &:active .Works-Books__link-name::after {
+        display: none;
+      }
+      &:hover .Works-Books__item-img {
+        transform: scale(1);
+      }
+      &:active .Works-Books__item-img {
+        transform: scale(1.05);
+      }
+      &-name {
+        font-size: 17px;
+        &::after {
+          width: 85%;
+        }
+      }
+    }
+
+    &__item {
+      width: 230px;
+      &-img {
+        height: 450px;
+        margin: 0 auto;
+        display: block;
+      }
+    }
+
+    &__img {
+      height: 350px;
+    }
+  }
+
+  .Button {
+    &:hover {
+      background-color: #a41320;
+    }
+    &:active {
+      background-color: #6d0b14;
+    }
+  }
+
+  .Button-social {
+    &:hover {
+      transform: scale(1);
+    }
+    &:active {
+      transform: scale(1.2);
+    }
+  }
+
+  // GENERAL //
+
+  //PROMO
+
+  .Promo {
+    &__img {
+      height: 157px;
+    }
+
+    &__link {
+      &:hover {
+        background: transparent;
+      }
+      &:active {
+        background: #a41320;
+      }
+    }
+  }
+
+  // BIO //
+  .Bio {
+    &__title {
+      margin-bottom: 30px;
+    }
+  }
+
+  .FanHo {
+    margin-bottom: 50px;
+
+    &__descr {
+      font-size: 17px;
+      margin-bottom: 35px;
+    }
+
+    &__img {
+      width: 300px;
+      height: 380px;
+    }
+  }
+
+  // // BOOKS //
+
+  .Books {
+    &__item {
+      width: 240px;
+      &-img {
+        width: 100%;
+        height: 280px;
+      }
+
+      &__link {
+        font-size: 17px;
+      }
+    }
+  }
+
+  // FOOTER //
+
+  .Footer {
+    &__link {
+      &:hover {
+        transform: scale(1);
+      }
+
+      &:active {
+        transform: scale(1.1);
+      }
+    }
+
+    &__item {
+      &:hover {
+        transform: scale(1);
+      }
+      &:active {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+@media all and (max-width: 991px) {
+  // BLOCKS //
+
+  .Container {
+    width: 100%;
+  }
+
+  .Stage {
+    min-height: 300px;
+  }
+
+  .Title {
+    font-size: 35px;
+  }
+
+  // // GENERAL //
+
+  // PROMO //
+
+  .Promo {
+    &__logo {
+      width: 310px;
+    }
+    &__img {
+      height: 140px;
+    }
+    &__link {
+      font-size: 25px;
+    }
+  }
+
+  // // BIO //
+
+  .Bio {
+    &__arr {
+      bottom: 0px;
+    }
+  }
+
+  .FanHo {
+    justify-content: space-around;
+    &__descr {
+      font-size: 16px;
+      max-width: 310px;
+    }
+
+    &__author {
+      font-size: 33px;
+    }
+  }
+
+  // WORKS //
+
+  .Works {
+    &__img {
+      height: 300px;
+    }
+  }
+
+  // FOOTER //
+
+  .Footer {
+    &__link {
+      font-size: 18px;
+    }
+
+    &__social {
+      width: 40px;
+      height: 40px;
+      &-img {
+        width: 22px;
+        height: 22px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 767px) {
+  // BLOCKS //
+
+  .Stage {
+    display: none;
+  }
+
+  .Arrow {
+    display: none;
+  }
+
+  .Works-Books {
+    padding-bottom: 40px;
+
+    &__wpr {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__item {
+      &:active .Works-Books__link-name::after {
+        display: none;
+      }
+      &:hover .Works-Books__item-img {
+        transform: scale(1);
+        transition: transform 0.5s;
+      }
+      &:active .Works-Books__item-img {
+        transform: scale(1.05);
+      }
+    }
+    &__img {
+      display: none;
+    }
+  }
+
+  // GENERAL //
+
+  // PROMO //
+
+  .Promo {
+    min-height: 480px;
+    &__social {
+      left: 120px;
+
+      &:nth-child(3) {
+        left: 170px;
+      }
+    }
+    &__logo {
+      width: 235px;
+    }
+    &__img {
+      height: 130px;
+    }
+    &__list {
+      bottom: 45px;
+    }
+  }
+
+  // BIO //
+
+  .Bio {
+    min-height: 600px;
+    padding: 45px 0;
+  }
+
+  .FanHo {
+    align-items: flex-end;
+    padding: 0 20px;
+
+    &__author {
+      font-size: 31px;
+    }
+    &__date {
+      font-size: 17px;
+    }
+    &__descr {
+      font-size: 16px;
+      max-width: 270px;
+      margin-bottom: 35px;
+    }
+    &__img {
+      width: 230px;
+      height: 340px;
+    }
+  }
+
+  // WORKS //
+
+  .Works {
+    &__item {
+      width: 254px;
+      margin-bottom: 60px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  // BOOKS //
+  .Books {
+    &__item {
+      margin-top: 30px;
+    }
+  }
+
+  // FOOTER //
+  .Footer {
+    &__btn-wpr {
+      width: 130px;
+    }
+  }
+}
+
+@media all and (max-width: 575px) {
+  // BLOCKS //
+
+  // GENERAL //
+
+  // PROMO //
+  .Promo {
+    min-height: 200px;
+    &__logo {
+      display: none;
+    }
+    &__social {
+      display: none;
+    }
+  }
+
+  // BIO //
+  .Bio {
+    min-height: 550px;
+    padding: 30px 0 0;
+  }
+  // FanHO //
+  .FanHo {
+    &__descr {
+      max-width: 100%;
+      min-height: 0;
+    }
+    &__img {
+      display: none;
+    }
+  }
+  // FOOTER //
+  .Footer {
+    &__link {
+      font-size: 16px;
+    }
+    &__list {
+      width: 100%;
+      padding: 0 7px;
+    }
+    &__wpr {
+      flex-direction: column-reverse;
+      margin-top: 30px;
+    }
+    &__btn-wpr {
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-around;
+      width: 130px;
+    }
+  }
+}

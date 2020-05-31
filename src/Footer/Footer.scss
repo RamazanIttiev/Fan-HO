@@ -40,11 +40,27 @@
     }
   }
 
+  &__wpr {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  &__btn-wpr {
+    display: flex;
+    justify-content: space-evenly;
+    width: 230px;
+  }
+
   &__copyright {
     font-family: ArnoPro;
     text-align: center;
     display: block;
-    margin-top: 40px;
+    position: absolute;
+    right: 50%;
+    margin: 0 auto;
+    transform: translate(50%);
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 1.6px;
@@ -53,12 +69,5 @@
 
   &__social {
     fill: white;
-    position: absolute;
-    bottom: 55px;
-    right: 65px;
-
-    &:nth-child(3) {
-      right: 120px;
-    }
   }
 }

@@ -10,6 +10,7 @@
   background: transparent;
   border: none;
   padding: 0;
+  margin-top: 8px;
 
   &__div {
     &:first-child {
@@ -69,7 +70,8 @@
 
 .Button {
   width: 196px;
-  height: 53px;
+  min-width: 196px;
+  min-height: 53px;
   background-color: #a41320;
   border: none;
   font-family: Arsenal;
@@ -88,7 +90,6 @@
   &:active {
     background-color: #a41320;
     color: #fff;
-
   }
 }
 
@@ -114,6 +115,9 @@
 
   &__item {
     width: 254px;
+    &-img {
+      width: 100%;
+    }
   }
 
   &__link {
@@ -128,6 +132,7 @@
       letter-spacing: 0.2px;
       color: #414141;
       text-align: center;
+      margin: 0 auto;
       margin-bottom: 17px;
       text-transform: uppercase;
       text-decoration: underline;
@@ -137,7 +142,8 @@
       &::after {
         content: '';
         display: block;
-        width: 255px;
+        width: 100%;
+        margin: 0 auto;
         background: #414141;
         height: 1px;
       }

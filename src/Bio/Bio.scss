@@ -27,6 +27,12 @@
   padding: 0 55px;
   margin-bottom: 100px;
 
+  &__wpr {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
   &__author {
     font-family: ArnoPro;
     font-size: 40px;
@@ -47,7 +53,7 @@
 
   &__descr {
     max-width: 362px;
-    min-height: 259px;
+    min-height: 0;
     font-family: Arsenal;
     font-size: 20px;
     font-weight: 400;
