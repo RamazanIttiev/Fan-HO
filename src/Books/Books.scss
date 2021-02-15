@@ -1,0 +1,27 @@
+.Books {
+  background: black;
+
+  &__title {
+    color: white;
+  }
+
+  &__link {
+    color: #fffcfc;
+
+    &:hover {
+      color: #fffcfc;
+    }
+
+    &-name {
+      color: #fffcfc;
+
+      &::after {
+        content: '';
+        display: block;
+        width: 255px;
+        background: #fffcfc;
+        height: 1px;
+      }
+    }
+  }
+}
